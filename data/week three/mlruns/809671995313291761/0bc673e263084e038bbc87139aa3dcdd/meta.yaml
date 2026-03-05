@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/jmofl/PycharmProjects/TimeSeriesProject_Feb_2026/data/week%20three/mlruns/809671995313291761/0bc673e263084e038bbc87139aa3dcdd/artifacts
+end_time: 1772632106513
+entry_point_name: ''
+experiment_id: '809671995313291761'
+lifecycle_stage: active
+run_id: 0bc673e263084e038bbc87139aa3dcdd
+run_name: Transformer_Model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772632106281
+status: 3
+tags: []
+user_id: jmofl

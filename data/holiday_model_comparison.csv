@@ -1,0 +1,4 @@
+Model,Without_Holiday,With_Holiday,Improvement,Improvement_%
+SARIMA,145.82,131.53,14.28,9.8
+Prophet,103.59,98.02,5.57,5.4
+XGBoost,91.23,91.23,0.0,0.0

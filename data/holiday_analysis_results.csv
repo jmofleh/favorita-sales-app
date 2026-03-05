@@ -1,0 +1,5 @@
+Category,Avg_Sales,Days
+Regular Weekdays,402.5324232081911,293
+Holiday Weekdays,432.7241379310345,29
+Regular Weekends,669.6071428571429,112
+Holiday Weekends,639.6666666666666,18

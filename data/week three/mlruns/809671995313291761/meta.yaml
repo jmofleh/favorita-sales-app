@@ -1,0 +1,7 @@
+artifact_location: file:///C:/Users/jmofl/PycharmProjects/TimeSeriesProject_Feb_2026/data/week%20three/mlruns/809671995313291761
+creation_time: 1772626990215
+experiment_id: '809671995313291761'
+last_update_time: 1772626990215
+lifecycle_stage: active
+name: GRU_Experiment
+workspace: default

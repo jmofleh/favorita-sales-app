@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/users/jmofl/pycharmProjects/TimeSeriesProject_Feb_2026/data/week
+  three/613794252730652754/87e66a1a61854ea5a54a19535e2e484c/artifacts
+end_time: 1772446162942
+entry_point_name: ''
+experiment_id: '613794252730652754'
+lifecycle_stage: active
+run_id: 87e66a1a61854ea5a54a19535e2e484c
+run_name: SARIMAX_Model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772446162841
+status: 3
+tags: []
+user_id: jmofl

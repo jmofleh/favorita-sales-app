@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/users/jmofl/pycharmProjects/TimeSeriesProject_Feb_2026/data/week
+  three/613794252730652754/7b88347e55d344519a92d231a2ca14c1/artifacts
+end_time: 1772446163295
+entry_point_name: ''
+experiment_id: '613794252730652754'
+lifecycle_stage: active
+run_id: 7b88347e55d344519a92d231a2ca14c1
+run_name: XGBoost_Best
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772446163196
+status: 3
+tags: []
+user_id: jmofl
