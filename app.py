@@ -619,8 +619,8 @@ st.markdown("---")
 st.markdown(
     f"""
     <div style='text-align: center; color: gray; padding: 1rem;'>
-        <p>Corporación Favorita Sales Analysis | 30-Day Forecast Included | March 2026</p>
-        <p style='font-size: 0.9rem;'>📊 by: <strong> Jawad Mofleh, jmofleh@yahoo.com</strong> | Data Analyst</p>
+        <p>Corporación Favorita Sales Analysis | 30-Day Forecast Included</p>
+        <p style='font-size: 0.9rem;'>📊 by: <strong> Jawad Mofleh, jmofleh@yahoo.com| March 2026 </strong> | Data Analyst</p>
     </div>
     """,
     unsafe_allow_html=True
