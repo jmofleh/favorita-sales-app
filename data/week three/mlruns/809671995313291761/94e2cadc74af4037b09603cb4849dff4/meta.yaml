@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/jmofl/PycharmProjects/TimeSeriesProject_Feb_2026/data/week%20three/mlruns/809671995313291761/94e2cadc74af4037b09603cb4849dff4/artifacts
+end_time: 1772720915238
+entry_point_name: ''
+experiment_id: '809671995313291761'
+lifecycle_stage: active
+run_id: 94e2cadc74af4037b09603cb4849dff4
+run_name: GRU_Model
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772720914765
+status: 3
+tags: []
+user_id: jmofl
