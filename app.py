@@ -307,7 +307,7 @@ elif page == "🔮 30-Day Forecast":
 
     # Generate forecast data
     np.random.seed(42)
-    future_dates = pd.date_range(start=datetime.datetime.now().date(), periods=30, freq='D')
+    future_dates = pd.date_range(start='2014-03-15', end='2014-04-15', freq='D')
 
     # Base forecast with different model variations
     base = 480 + np.random.normal(0, 10, 30).cumsum() * 0.3
@@ -620,7 +620,7 @@ st.markdown(
     f"""
     <div style='text-align: center; color: gray; padding: 1rem;'>
         <p>Corporación Favorita Sales Analysis | 30-Day Forecast Included | March 2026</p>
-        <p style='font-size: 0.9rem;'>📊 by: <strong> Jawad Mofleh, jmofleh@yahoo.comd</strong> | Data Analyst</p>
+        <p style='font-size: 0.9rem;'>📊 by: <strong> Jawad Mofleh, jmofleh@yahoo.com</strong> | Data Analyst</p>
     </div>
     """,
     unsafe_allow_html=True
