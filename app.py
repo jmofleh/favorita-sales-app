@@ -300,27 +300,28 @@ elif page == "📊 Sales Metrics":
         st.dataframe(sales_stats, use_container_width=True)
 
 # ============================================================================
-# PAGE 3: 30-DAY FORECAST
+# PAGE 3: 30-DAY FORECAST (FIXED - March 15 to April 15, 2014)
 # ============================================================================
 elif page == "🔮 30-Day Forecast":
     st.markdown('<h1 class="main-header">🔮 30-Day Sales Forecast - All Models</h1>', unsafe_allow_html=True)
 
-    # Generate forecast data
-    np.random.seed(42)
+    # Generate forecast data for March 15 - April 15, 2014
     future_dates = pd.date_range(start='2014-03-15', end='2014-04-15', freq='D')
+    n_days = len(future_dates)
 
     # Base forecast with different model variations
-    base = 480 + np.random.normal(0, 10, 30).cumsum() * 0.3
+    np.random.seed(42)
+    base = 480 + np.random.normal(0, 10, n_days).cumsum() * 0.3
     weekly_pattern = np.array([0.85, 0.82, 0.84, 0.88, 1.05, 1.20, 1.18])
     seasonal = weekly_pattern[future_dates.dayofweek]
 
     forecasts = pd.DataFrame({'Date': future_dates})
-    forecasts['XGBoost'] = (base * seasonal * np.random.normal(1, 0.02, 30)).round()
-    forecasts['GRU'] = (base * seasonal * np.random.normal(1, 0.03, 30)).round()
-    forecasts['SARIMA'] = (base * seasonal * np.random.normal(1, 0.04, 30)).round()
-    forecasts['Transformer'] = (base * seasonal * np.random.normal(1, 0.05, 30)).round()
-    forecasts['Prophet'] = (base * seasonal * np.random.normal(1, 0.04, 30)).round()
-    forecasts['Moving_Avg'] = (base * seasonal * np.random.normal(1, 0.08, 30)).round()
+    forecasts['XGBoost'] = (base * seasonal * np.random.normal(1, 0.02, n_days)).round()
+    forecasts['GRU'] = (base * seasonal * np.random.normal(1, 0.03, n_days)).round()
+    forecasts['SARIMA'] = (base * seasonal * np.random.normal(1, 0.04, n_days)).round()
+    forecasts['Transformer'] = (base * seasonal * np.random.normal(1, 0.05, n_days)).round()
+    forecasts['Prophet'] = (base * seasonal * np.random.normal(1, 0.04, n_days)).round()
+    forecasts['Moving_Avg'] = (base * seasonal * np.random.normal(1, 0.08, n_days)).round()
 
     # Plot forecasts
     fig = go.Figure()
@@ -338,7 +339,7 @@ elif page == "🔮 30-Day Forecast":
         ))
 
     fig.update_layout(
-        title="30-Day Forecast Comparison: All Models",
+        title="30-Day Forecast Comparison: March 15 - April 15, 2014",
         xaxis_title="Date",
         yaxis_title="Predicted Sales",
         hovermode='x unified',
@@ -612,7 +613,6 @@ else:
         file_name="model_comparison_report.txt",
         mime="text/plain"
     )
-
 
 # Footer
 st.markdown("---")
